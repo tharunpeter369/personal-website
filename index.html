@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="bg-dark" style="position:fixed; width:100%; z-index: 1;">
+    <header class="bg-dark" style="position:; width:100%; z-index: 1;">
         <div class="row text-white " >
             <div class="col-md-6 col-9 p-3 pl-5">
                 <h2>Tharun Peter</h2>
@@ -47,13 +47,18 @@
     </header>
 
     <!-- banner and details -->
+    <div class="row">
 
-    <section class="background" id="home-section">
-         <div class="container about col-12 col-md-6 text-center">
-            <h1 class="intro-title mb-4 text-white" style="font-family: Source Sans Pro;">I am Tharun peter</h1>
-            <p class="intro-subtitle  text-white"><span class="text-slider-items intro">Web Developer,Web Designer,Frontend Developer</span><strong class="text-slider"></strong></p>
-          </div>
-    </section>
+      <section class="background" id="home-section">
+        <div class="container about col-12 col-md-6 text-center">
+           <h1 class="intro-title mb-4 text-white" style="font-family: Source Sans Pro;">I am Tharun peter</h1>
+           <p class="intro-subtitle  text-white"><span class="text-slider-items intro">Web Developer,Web Designer,Frontend Developer</span><strong class="text-slider"></strong></p>
+         </div>
+   </section>
+
+    </div>
+
+
 
     <!-- content -->
 
@@ -130,8 +135,10 @@
       <!-- services -->
       <div class="section bg-light p-4" id="services">
             <div class="container">
-                <h1 class="text-center">Services</h1>
-                <div class="row mt-4">
+              <div class="row text-center justify-content-center">
+                <span class="text-center h1">Services</span>
+              </div>
+                <div class="row mt-4 col-12">
                     <div class="col-md-4">
                         <div class="card text-center p-2 box" style="width: 18rem;">
                             <i class="fas fa-palette  display-1 text-success"></i>
@@ -203,8 +210,6 @@
                             <label for="email" class="">Your email</label>
                         </div>
                     </div>
-                    
-
                 </div>
                
                 <div class="row">
@@ -235,7 +240,6 @@
             <div class="text-center text-md-left">
                 <a class="btn btn-success buttonsize">Send</a>
             </div>
-            <div class="status"></div>
         </div>
         
         <div class="col-md-3 text-center">

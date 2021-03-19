@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#contact-form").validate({
+    $("#submit-form").validate({
         rules:{
             fname:{
                 required:true,
@@ -8,15 +8,23 @@ $(document).ready(function(){
             email:{
                 required:true,
                 email:true
+            },
+            subject:{
+                required:true,
+                minlength:5
+            },
+            message:{
+                required:true,
+                minlength:10
             }
         },
         messages:{
-            // fname:{
-            //     required:"min 3 letter"
-            // }
+            fname:{
+                required:"Minimum Three letter required"
+            }
 
-        }
-
+        },
+        
     })
 })
 
@@ -36,5 +44,25 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+
+//   $("#submit-form").submit((e)=>{
+//     e.preventDefault()
+//     $.ajax({
+//         url:"https://script.google.com/macros/s/AKfycbynwqh4FsWhKv1vMhLXQMdxyAhj8P6FSXAPc5Rk8S6nib8IhotFEV1F7OnHzNOr5RcE/exec",
+//         data:$("#submit-form").serialize(),
+//         method:"post",
+//         success:function (response){
+//             alert("Form submitted successfully")
+//             window.location.reload()
+//             //window.location.href="https://google.com"
+//         },
+//         error:function (err){
+//             alert("Something Error")
+
+//         }
+//     })
+// })
 
   

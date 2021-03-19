@@ -7,6 +7,7 @@
     <link rel="icon" href="https://cutt.ly/izBZjU4" type="image/gif" sizes="16x16">
     <title>Tharun Peter</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C4E03AQEmpH-6Xax98w/profile-displayphoto-shrink_100_100/0?e=1594252800&v=beta&t=IM2YSTbv6Oj3Dk_YLMge7uVvCpMXEwQ0K1aDLzctx8w" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -195,25 +196,23 @@
         a matter of hours to help you.</p>
 
     <div class="row">
-
-        
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="" method="">
+
+
+            <form id="submit-form" name="submit" action="https://script.google.com/macros/s/AKfycbynwqh4FsWhKv1vMhLXQMdxyAhj8P6FSXAPc5Rk8S6nib8IhotFEV1F7OnHzNOr5RcE/exec" method="post">
 
                 
-                <div class="row">
-
-                    
+                <div class="row">  
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="fname" class="form-control" placeholder="Enter your name">
+                            <input type="text" id="name" name="fname" class="form-control" placeholder="Enter your name" required>
                             <label for="name" class="" placeholder="name"></label>
                         </div>
                     </div>
                     
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control" placeholder="Enter your Email">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required>
                             <label for="email" class=""></label>
                         </div>
                     </div>
@@ -222,30 +221,24 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
+                            <input type="text" id="subject" name="subject" class="form-control" required>
                             <label for="subject" class="">Subject</label>
                         </div>
                     </div>
                 </div>
                
-                <div class="row">
-
-                    
+                <div class="row">  
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
                             <label for="message">Your message</label>
                         </div>
 
                     </div>
 
                     <button type="submit" class="btn btn-success buttonsize ml-3">Send</button>
-
-
                 </div>
-               
-
             </form>
 <!-- 
             <div class="text-center text-md-left">
@@ -264,7 +257,7 @@
                 </li>
                 
 
-                <li><a href=""><i class="fas fa-envelope mt-4 fa-2x text-dark"></i></a>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope mt-4 fa-2x text-dark"></i></a>
                     <p>tharunpeter@gmail.com</p>
                 </li>
             </ul>
@@ -312,7 +305,13 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-  </script>
+
+
+ 
+ 
+ 
+ 
+ </script>
     
 
 

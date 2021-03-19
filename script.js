@@ -1,7 +1,14 @@
+
+
+$.validator.addMethod("alpha", function(value, element) {
+    return this.optional(element) || value == value.match(/^[a-zA-Z\s]+$/);
+});
+
 $(document).ready(function(){
     $("#submit-form").validate({
         rules:{
             fname:{
+                alpha:true,
                 required:true,
                 minlength:3
             },
@@ -18,9 +25,26 @@ $(document).ready(function(){
                 minlength:10
             }
         },
+
+
+
+        
         messages:{
             fname:{
-                required:"Minimum Three letter required"
+                alpha: "Only letter",
+                required:"Minimum Three letter required in name"
+            },
+            // email:{
+            //     required:true,
+                
+            // },
+            subject:{
+                required:"Minimum Three one word required in"
+                
+            },
+            message:{
+                required:"Minimum Three word required in"
+               
             }
 
         },
